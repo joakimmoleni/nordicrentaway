@@ -1,0 +1,15 @@
+{
+  "id": "service-004", "slug": "property-investment", "order": 4, "status": "published",
+  "source": "https://www.nordicrentaway.com/services/property-investment", "verifiedAt": "2026-09-07",
+  "en": {
+    "title": "Property investment advice", "summary": "Think through a future home on the coast.",
+    "description": "Advice informed by the company’s experience of local holiday rentals.",
+    "rows": [
+      {"title": "Start with your priorities", "text": "Discuss the kind of home you are looking for and how you plan to use it."},
+      {"title": "Consider the location", "text": "Look at the advantages and disadvantages of areas against your plans."},
+      {"title": "Explore the options", "text": "The company describes helping clients narrow a shortlist and visit suitable properties. This is not a promise of rental income or investment returns."}
+    ],
+    "seoTitle": "Property investment advice on Costa Blanca | Nordic RentAway",
+    "seoDescription": "Advice informed by the company’s experience of local holiday rentals. Talk to Nordic RentAway Spain about your property."
+  }
+}

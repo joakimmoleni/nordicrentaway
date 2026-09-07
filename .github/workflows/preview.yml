@@ -1,0 +1,64 @@
+name: Build and publish Johan preview
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: johan-preview
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Read the source version
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prepare approved company images
+        run: |
+          command -v convert
+          node scripts/prepare-media.mjs
+      - name: Validate, test and build the preview
+        run: |
+          node scripts/validate.mjs
+          node --test tests/core.test.mjs
+          node scripts/build.mjs
+      - name: Save the exact source and preview together
+        run: |
+          mkdir preview-package
+          git archive --format=zip --output=preview-package/source.zip HEAD
+          cp -R dist preview-package/site
+      - name: Save a downloadable preview even if Pages is not enabled
+        uses: actions/upload-artifact@v4
+        with:
+          name: johan-preview
+          path: preview-package/
+          retention-days: 7
+      - name: Package the public website only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist/
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check GitHub Pages configuration
+        uses: actions/configure-pages@v5
+      - name: Publish the separate Johan preview
+        id: deployment
+        uses: actions/deploy-pages@v4

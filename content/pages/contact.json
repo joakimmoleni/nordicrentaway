@@ -1,0 +1,28 @@
+{
+  "en": {
+    "seoTitle": "Discuss your property with Johan | Nordic RentAway Spain",
+    "seoDescription": "Contact Johan Sjölin about rental or property management on the Costa Blanca. Direct email and telephone details, separate from guest support.",
+    "eyebrow": "For property owners",
+    "heading": "Let’s talk about\nyour property.",
+    "intro": "Tell Johan where your home is and what you’d like help with. Start with a few details, not a stack of paperwork.",
+    "helpHeading": "A useful first message",
+    "helpText": "Your name, the town and the help you are looking for are enough to get the conversation started. You can add the property type and a phone number, but no exact address or financial documents are needed.",
+    "emailCta": "Email Johan",
+    "callCta": "Call Johan",
+    "guestHeading": "Already a guest?",
+    "guestText": "For a reservation or an existing stay, contact the Guest Experience Team directly.",
+    "emailNote": "These links open your email app or phone. Nothing is sent automatically.",
+    "form": {
+      "enabled": false,
+      "endpoint": null,
+      "fields": [
+        {"name": "name", "label": "Name", "type": "text", "required": true, "autocomplete": "name"},
+        {"name": "email", "label": "Email", "type": "email", "required": true, "autocomplete": "email"},
+        {"name": "town", "label": "Property town", "type": "text", "required": true, "autocomplete": "address-level2"},
+        {"name": "phone", "label": "Phone (optional)", "type": "tel", "required": false, "autocomplete": "tel"},
+        {"name": "propertyType", "label": "Property type (optional)", "type": "text", "required": false, "autocomplete": "off"},
+        {"name": "message", "label": "Message (optional)", "type": "textarea", "required": false, "autocomplete": "off"}
+      ]
+    }
+  }
+}

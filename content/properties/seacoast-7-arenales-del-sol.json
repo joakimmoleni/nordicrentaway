@@ -1,0 +1,14 @@
+{
+  "id": "property-001", "slug": "seacoast-7-arenales-del-sol", "status": "published", "order": 1,
+  "town": "Arenales del Sol", "type": {"en": "Apartment"}, "mediaIds": ["media-001"],
+  "guests": 4, "bedrooms": 2, "bathrooms": 2, "scope": null,
+  "bookingUrl": "https://nordicrentawayspain.holidayfuture.com/listings/232481",
+  "source": "https://nordicrentawayspain.holidayfuture.com/listings/232481", "verifiedAt": "2026-09-07",
+  "en": {
+    "name": "SeaCoast 7",
+    "description": "A two-bedroom apartment close to the dunes of Los Arenales del Sol, with access to a shared pool and outdoor recreation areas.",
+    "features": ["Shared swimming pool", "Air conditioning", "Kitchen"],
+    "seoTitle": "SeaCoast 7, Arenales del Sol | Nordic RentAway properties",
+    "seoDescription": "A two-bedroom apartment close to the dunes of Los Arenales del Sol, with access to a shared pool and outdoor recreation areas."
+  }
+}

@@ -2,3 +2,10 @@
 .env
 .env.*
 !.env.example
+node_modules/
+dist/
+.cache/
+public/assets/photos/
+public/assets/brand/
+.dist-stage-*/
+.dist-previous-*/

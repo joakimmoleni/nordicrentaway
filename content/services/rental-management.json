@@ -1,0 +1,17 @@
+{
+  "id": "service-001", "slug": "rental-management", "order": 1, "status": "published",
+  "source": "https://www.nordicrentaway.com/services/rental-management", "verifiedAt": "2026-09-07",
+  "en": {
+    "title": "Rental management",
+    "summary": "From preparing the home to welcoming guests.",
+    "description": "Preparation, photography, listing presentation and the day-to-day work around your holiday rental.",
+    "rows": [
+      {"title": "Getting ready", "text": "Guidance on preparation and documentation, followed by the photography and presentation of the home."},
+      {"title": "Listings and stays", "text": "Rental listings, reservation administration and communication with guests around their stay."},
+      {"title": "Your own time here", "text": "Your personal stays are coordinated with the rental calendar. The company’s existing owner portal provides calendar access."},
+      {"title": "The practical work", "text": "Cleaning arrangements, rental statements and coordination with property care. Confirm the service scope and current fees with Johan."}
+    ],
+    "seoTitle": "Rental management on Costa Blanca | Nordic RentAway",
+    "seoDescription": "Preparation, photography, listing presentation and the day-to-day work around your holiday rental. Talk to Nordic RentAway Spain about your property."
+  }
+}

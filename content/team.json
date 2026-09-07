@@ -1,0 +1,4 @@
+[
+  {"id": "person-001", "name": "Johan Sjölin", "role": {"en": "Administration"}, "email": "johan@nordicrentaway.com", "phone": "+34 695 462 875", "source": "https://www.nordicrentaway.com/contact", "verifiedAt": "2026-09-07", "mediaId": null},
+  {"id": "person-002", "name": "Isabel Hansen", "role": {"en": "Administration"}, "email": "isabel@nordicrentaway.com", "phone": "+34 615 264 601", "source": "https://www.nordicrentaway.com/contact", "verifiedAt": "2026-09-07", "mediaId": null}
+]

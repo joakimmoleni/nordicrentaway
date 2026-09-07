@@ -1,0 +1,15 @@
+{
+  "id": "service-003", "slug": "interior-design", "order": 3, "status": "published",
+  "source": "https://www.nordicrentaway.com/services/interior-design", "verifiedAt": "2026-09-07",
+  "en": {
+    "title": "Interior design", "summary": "Make the space work for your home.",
+    "description": "Planning and practical project support, shaped around your ideas for the property.",
+    "rows": [
+      {"title": "Plan the budget", "text": "Discuss a project budget and cost estimate before choosing a direction."},
+      {"title": "Shape the space", "text": "Work through the design and practical choices with the team."},
+      {"title": "Coordinate the work", "text": "Support can include organising purchases, supervising renovations and handling deliveries."}
+    ],
+    "seoTitle": "Interior design on Costa Blanca | Nordic RentAway",
+    "seoDescription": "Planning and practical project support, shaped around your ideas for the property. Talk to Nordic RentAway Spain about your property."
+  }
+}

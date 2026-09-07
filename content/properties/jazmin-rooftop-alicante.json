@@ -1,0 +1,14 @@
+{
+  "id": "property-003", "slug": "jazmin-rooftop-alicante", "status": "published", "order": 3,
+  "town": "Alicante", "type": {"en": "Rooftop apartment"}, "mediaIds": ["media-003"],
+  "guests": 4, "bedrooms": 2, "bathrooms": null, "scope": null,
+  "bookingUrl": "https://nordicrentawayspain.holidayfuture.com/listings/232476",
+  "source": "https://nordicrentawayspain.holidayfuture.com/listings/232476", "verifiedAt": "2026-09-07",
+  "en": {
+    "name": "Jazmin Rooftop",
+    "description": "A two-bedroom rooftop apartment with several terraces and a living and kitchen area.",
+    "features": ["Rooftop terraces", "Air conditioning", "Kitchen"],
+    "seoTitle": "Jazmin Rooftop, Alicante | Nordic RentAway properties",
+    "seoDescription": "A two-bedroom rooftop apartment with several terraces and a living and kitchen area."
+  }
+}

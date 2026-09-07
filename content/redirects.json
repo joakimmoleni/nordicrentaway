@@ -1,0 +1,8 @@
+[
+  {"from": "/services/rental-management", "to": "/services/rental-management/"},
+  {"from": "/services/property-management", "to": "/services/property-management/"},
+  {"from": "/services/interior-design", "to": "/services/interior-design/"},
+  {"from": "/services/property-investment", "to": "/services/property-investment/"},
+  {"from": "/contact", "to": "/contact/"},
+  {"from": "/vision", "to": null, "note": "A separate vision page exists. Confirm whether its content should be retained before deciding a redirect."}
+]

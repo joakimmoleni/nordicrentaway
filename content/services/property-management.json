@@ -1,0 +1,16 @@
+{
+  "id": "service-002", "slug": "property-management", "order": 2, "status": "published",
+  "source": "https://www.nordicrentaway.com/services/property-management", "verifiedAt": "2026-09-07",
+  "en": {
+    "title": "Property management", "summary": "A local pair of hands when you’re away.",
+    "description": "Key-holding, maintenance, cleaning and representation for homes on the Costa Blanca.",
+    "rows": [
+      {"title": "Keys and access", "text": "Key-holding for your property, including discussing a standalone key-holding arrangement."},
+      {"title": "Maintenance and cleaning", "text": "Help with repairs, ongoing maintenance and cleaning outside guest stays."},
+      {"title": "Someone there for you", "text": "Representation for agreed appointments, including deliveries, technicians and insurance matters."},
+      {"title": "Rental or personal use", "text": "Property care can also be discussed for periods when your home is not rented out. Agree individual work and charges before it starts."}
+    ],
+    "seoTitle": "Property management on Costa Blanca | Nordic RentAway",
+    "seoDescription": "Key-holding, maintenance, cleaning and representation for homes on the Costa Blanca. Talk to Nordic RentAway Spain about your property."
+  }
+}

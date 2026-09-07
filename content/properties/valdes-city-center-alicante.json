@@ -1,0 +1,14 @@
+{
+  "id": "property-002", "slug": "valdes-city-center-alicante", "status": "published", "order": 2,
+  "town": "Alicante", "type": {"en": "Apartment"}, "mediaIds": ["media-002"],
+  "guests": 6, "bedrooms": 3, "bathrooms": 1, "scope": null,
+  "bookingUrl": "https://nordicrentawayspain.holidayfuture.com/listings/232473",
+  "source": "https://nordicrentawayspain.holidayfuture.com/listings/232473", "verifiedAt": "2026-09-07",
+  "en": {
+    "name": "Valdes City Center",
+    "description": "A three-bedroom city apartment with a terrace, listed in central Alicante near the Esplanada and harbour.",
+    "features": ["Terrace", "Air conditioning", "Kitchen"],
+    "seoTitle": "Valdes City Center, Alicante | Nordic RentAway properties",
+    "seoDescription": "A three-bedroom city apartment with a terrace, listed in central Alicante near the Esplanada and harbour."
+  }
+}
