@@ -5,7 +5,11 @@ import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 
 const root=path.resolve(fileURLToPath(new URL('../dist/',import.meta.url)));
-const port=Number(process.env.PORT || 4173);
+const args=process.argv.slice(2);
+const option=name=>args.includes(name)?args[args.indexOf(name)+1]:undefined;
+const host=option('--host') || '127.0.0.1';
+if(!['127.0.0.1','0.0.0.0'].includes(host))throw new Error('Unsupported preview host.');
+const port=Number(option('--port') || process.env.PORT || 4173);
 if(!Number.isInteger(port)||port<0||port>65535)throw new Error('PORT must be an integer between 0 and 65535.');
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.xml':'application/xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.avif':'image/avif','.svg':'image/svg+xml','.mp4':'video/mp4','.vtt':'text/vtt; charset=utf-8'};
 const server=createServer(async(req,res)=>{
@@ -44,4 +48,4 @@ const server=createServer(async(req,res)=>{
  }
 });
 server.on('error',error=>{console.error(`Could not start local preview: ${error.message}`);process.exitCode=1;});
-server.listen(port,'127.0.0.1',()=>console.log(`Local preview: http://127.0.0.1:${server.address().port}\nOnly this computer. Stop with Ctrl+C.`));
+server.listen(port,host,()=>console.log(`Local preview: http://127.0.0.1:${server.address().port}\nOnly this computer. Stop with Ctrl+C.`));

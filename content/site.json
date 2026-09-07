@@ -2,38 +2,65 @@
   "schemaVersion": 1,
   "name": "Nordic RentAway Spain",
   "language": "en",
-  "availableLanguages": ["en"],
+  "availableLanguages": [
+    "en"
+  ],
   "canonicalOrigin": "https://www.nordicrentaway.com",
   "canonicalOriginConfirmed": false,
   "previewUrl": "https://joakimmoleni.github.io/nordicrentaway/",
   "logoMediaId": "media-logo",
   "companyName": "Nordic RentAway Spain, SL",
-  "area": {"en": "Costa Blanca, from Dénia to Orihuela"},
+  "area": {
+    "en": "Costa Blanca, from Dénia to Orihuela"
+  },
   "bookingUrl": "https://nordicrentawayspain.holidayfuture.com/all-listings",
   "recommendationsUrl": "https://www.werecommend.es/",
   "ownerContactId": "person-001",
-  "guestContact": {"name": "Guest Experience Team", "email": "team@nordicrentaway.com", "phone": "+34 653 580 622"},
+  "guestContact": {
+    "name": "Guest Experience Team",
+    "email": "team@nordicrentaway.com",
+    "phone": "+34 653 580 622"
+  },
   "generalEmail": "info@nordicrentaway.com",
   "verifiedAt": "2026-09-07",
   "source": "https://www.nordicrentaway.com/contact",
   "navigation": [
-    {"label": "Services", "path": "services/index.html"},
-    {"label": "How it works", "path": "index.html#how-it-works"},
-    {"label": "Our properties", "path": "properties/index.html"},
-    {"label": "About us", "path": "about/index.html"},
-    {"label": "Contact", "path": "contact/index.html"}
+    {
+      "label": "Holiday homes",
+      "path": "properties/index.html"
+    },
+    {
+      "label": "For owners",
+      "path": "services/index.html"
+    },
+    {
+      "label": "About us",
+      "path": "about/index.html"
+    },
+    {
+      "label": "Contact",
+      "path": "contact/index.html"
+    }
   ],
-  "ui": {"en": {
-    "primaryCta": "Discuss your property",
-    "guestCta": "Book a holiday",
-    "ownerLabel": "For property owners",
-    "skip": "Skip to content",
-    "backProperties": "All properties",
-    "propertyCta": "Let’s talk about your property",
-    "footerHeading": "A home here.\nA team here, too.",
-    "footerText": "Tell us where your property is and what you need help with. Johan is your first point of contact.",
-    "photoPending": "Photo awaiting approval",
-    "placeholderLabel": "Development placeholder · not a property image"
-  }},
-  "production": {"contentApproved": false, "mediaApproved": false, "legalReviewed": false, "publishingConfigured": false, "languagesConfirmed": false}
+  "ui": {
+    "en": {
+      "primaryCta": "Talk to Johan",
+      "guestCta": "Book a stay",
+      "ownerLabel": "Homes & hospitality",
+      "skip": "Skip to content",
+      "backProperties": "All properties",
+      "propertyCta": "Check availability",
+      "footerHeading": "Make yourself\nat home.",
+      "footerText": "Planning a holiday or looking for a team to care for your property? We’d love to hear from you.",
+      "photoPending": "Photo awaiting approval",
+      "placeholderLabel": "Development placeholder · not a property image"
+    }
+  },
+  "production": {
+    "contentApproved": false,
+    "mediaApproved": false,
+    "legalReviewed": false,
+    "publishingConfigured": false,
+    "languagesConfirmed": false
+  }
 }

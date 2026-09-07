@@ -7,5 +7,5 @@ export function enhanceNavigation() {
   });
   menu.addEventListener('click',event=>{if(event.target.closest('a'))close();});
   document.addEventListener('click',event=>{if(menu.open&&!menu.contains(event.target))close();});
-  window.matchMedia('(min-width: 1051px)').addEventListener('change',event=>{if(event.matches)close();});
+  window.matchMedia('(min-width: 901px)').addEventListener('change',event=>{if(event.matches)close();});
 }

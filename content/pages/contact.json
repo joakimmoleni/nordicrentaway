@@ -1,27 +1,63 @@
 {
   "en": {
-    "seoTitle": "Discuss your property with Johan | Nordic RentAway Spain",
-    "seoDescription": "Contact Johan Sjölin about rental or property management on the Costa Blanca. Direct email and telephone details, separate from guest support.",
-    "eyebrow": "For property owners",
-    "heading": "Let’s talk about\nyour property.",
-    "intro": "Tell Johan where your home is and what you’d like help with. Start with a few details, not a stack of paperwork.",
+    "seoTitle": "Contact the team | Nordic RentAway Spain",
+    "seoDescription": "Contact Johan about your Costa Blanca property or speak to our Guest Experience Team about holiday homes, reservations and your stay.",
+    "eyebrow": "Get in touch",
+    "heading": "Let’s talk.",
+    "intro": "A home to look after or a holiday to plan? Here’s who to speak to.",
     "helpHeading": "A useful first message",
-    "helpText": "Your name, the town and the help you are looking for are enough to get the conversation started. You can add the property type and a phone number, but no exact address or financial documents are needed.",
+    "helpText": "Tell us the town, the type of property and what you would like help with. That’s enough to start.",
     "emailCta": "Email Johan",
     "callCta": "Call Johan",
-    "guestHeading": "Already a guest?",
-    "guestText": "For a reservation or an existing stay, contact the Guest Experience Team directly.",
-    "emailNote": "These links open your email app or phone. Nothing is sent automatically.",
+    "guestHeading": "Your next stay",
+    "guestText": "Ask about a holiday home, a reservation or your current stay.",
+    "emailNote": "Monday–Friday · 09:00–17:00",
     "form": {
       "enabled": false,
       "endpoint": null,
       "fields": [
-        {"name": "name", "label": "Name", "type": "text", "required": true, "autocomplete": "name"},
-        {"name": "email", "label": "Email", "type": "email", "required": true, "autocomplete": "email"},
-        {"name": "town", "label": "Property town", "type": "text", "required": true, "autocomplete": "address-level2"},
-        {"name": "phone", "label": "Phone (optional)", "type": "tel", "required": false, "autocomplete": "tel"},
-        {"name": "propertyType", "label": "Property type (optional)", "type": "text", "required": false, "autocomplete": "off"},
-        {"name": "message", "label": "Message (optional)", "type": "textarea", "required": false, "autocomplete": "off"}
+        {
+          "name": "name",
+          "label": "Name",
+          "type": "text",
+          "required": true,
+          "autocomplete": "name"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "autocomplete": "email"
+        },
+        {
+          "name": "town",
+          "label": "Property town",
+          "type": "text",
+          "required": true,
+          "autocomplete": "address-level2"
+        },
+        {
+          "name": "phone",
+          "label": "Phone (optional)",
+          "type": "tel",
+          "required": false,
+          "autocomplete": "tel"
+        },
+        {
+          "name": "propertyType",
+          "label": "Property type (optional)",
+          "type": "text",
+          "required": false,
+          "autocomplete": "off"
+        },
+        {
+          "name": "message",
+          "label": "Message (optional)",
+          "type": "textarea",
+          "required": false,
+          "autocomplete": "off"
+        }
       ]
     }
   }

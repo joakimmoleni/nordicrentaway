@@ -50,7 +50,7 @@ export function propertyCard(property, ctx, index=0) {
 export function serviceRows(ctx, {expanded=false}={}) {
   const e=escapeHTML;
   return `<div class="service-list">${ctx.model.services.filter(s=>s.status==='published').map(s=>`<article class="service-row">
-    <span class="row-number" aria-hidden="true">${String(s.order).padStart(2,'0')}</span><div><h3><a href="${e(ctx.href(servicePath(s)))}">${e(s.en.title)}</a></h3><p>${e(expanded?s.en.description:s.en.summary)}</p></div>
+    <div><h3><a href="${e(ctx.href(servicePath(s)))}">${e(s.en.title)}</a></h3><p>${e(expanded?s.en.description:s.en.summary)}</p></div>
     <a class="row-arrow" href="${e(ctx.href(servicePath(s)))}" aria-label="Read about ${e(s.en.title)}">${arrowRight}</a></article>`).join('')}</div>`;
 }
 
