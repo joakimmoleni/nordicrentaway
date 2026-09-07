@@ -12,6 +12,13 @@ const media=JSON.parse(await readFile(path.join(root,'content/media.json'),'utf8
 const cache=path.join(root,'.cache/media');
 await mkdir(cache,{recursive:true});
 const digest=bytes=>createHash('sha256').update(bytes).digest('hex');
+let usePHP=false;
+try { await exec('convert',['-version']); }
+catch(error) {
+  if(error.code!=='ENOENT')throw error;
+  await exec('php',['-r',"if (!extension_loaded('imagick')) {fwrite(STDERR, 'ImageMagick must be available as convert or PHP Imagick.'); exit(1);}"]);
+  usePHP=true;
+}
 for(const item of media.filter(item=>item.status==='approved')){
   if(!/^[a-z0-9-]+$/.test(item.id)||!/^[a-f0-9]{64}$/.test(item.sha256||''))throw new Error('Invalid pinned media metadata.');
   const url=new URL(item.source);
@@ -36,9 +43,9 @@ for(const item of media.filter(item=>item.status==='approved')){
     const destination=path.join(root,'public',output.src);
     await mkdir(path.dirname(destination),{recursive:true});
     const extension=path.extname(destination);
-    const stage=destination.replace(new RegExp(`\\${extension}$`),`.tmp${extension}`);
-    // ImageMagick is present in the build image; do not install a package silently.
-    await exec('convert',[original,'-auto-orient','-strip','-resize',`${output.width}x>`,'-quality','84',stage],{timeout:45000,maxBuffer:1024*1024});
+    const stage=destination.slice(0,-extension.length)+'.tmp'+extension;
+    if(usePHP) await exec('php',[path.join(root,'scripts/convert-image.php'),original,String(output.width),stage],{timeout:45000,maxBuffer:1024*1024});
+    else await exec('convert',[original,'-auto-orient','-strip','-resize',`${output.width}x>`,'-quality','84',stage],{timeout:45000,maxBuffer:1024*1024});
     await rename(stage,destination);
   }
   console.log(`Prepared ${item.id}: ${outputs.length} local image variants`);

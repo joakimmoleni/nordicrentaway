@@ -21,10 +21,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Prepare approved company images
-        run: |
-          command -v convert
-          node scripts/prepare-media.mjs
+      - name: Prepare approved company images with the existing image tools
+        run: node scripts/prepare-media.mjs
       - name: Validate, test and build the preview
         run: |
           node scripts/validate.mjs
