@@ -56,5 +56,6 @@ export function serviceRows(ctx, {expanded=false}={}) {
 
 export function person(person, ctx, {compact=false}={}) {
   const e=escapeHTML;
-  return `<div class="person ${compact?'person-compact':''}"><p class="eyebrow">${e(person.role.en)}</p><h3>${e(person.name)}</h3><a href="mailto:${e(person.email)}">${e(person.email)}</a><a href="${e(phoneHref(person.phone))}">${e(person.phone)}</a></div>`;
+  const portrait=ctx.model.media.find(m=>m.id===person.mediaId);
+  return `<div class="person ${compact?'person-compact':''}">${portrait?picture(portrait,ctx,{className:'person-portrait',sizes:'140px'}):''}<p class="eyebrow">${e(person.role.en)}</p><h3>${e(person.name)}</h3><a href="mailto:${e(person.email)}">${e(person.email)}</a><a href="${e(phoneHref(person.phone))}">${e(person.phone)}</a></div>`;
 }

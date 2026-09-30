@@ -1,6 +1,6 @@
 # Nordic RentAway — visningsversion för Johan
 
-Visningsversion med omarbetad boutiquedesign, tydliga vägar för gäster och bostadsägare, företagets godkända fotografier och originallogotyp. 13 förgenererade HTML-sidor, vanlig CSS och små JavaScript-moduler. Ingen ny bokningsplattform, databas, spårning eller formulärtjänst.
+Visningsversion med ett ljust kustuttryck som bygger på företagets nuvarande hemsida: originalets havsutsikt och logotyp, riktiga porträtt av Johan och Isabel samt fastighetsägare som huvudmålgrupp. 13 förgenererade HTML-sidor, vanlig CSS och små JavaScript-moduler. Ingen ny bokningsplattform, databas, spårning eller formulärtjänst.
 
 ## Publicering
 

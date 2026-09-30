@@ -1,15 +1,15 @@
 :root {
-  --paper: #faf7f1;
-  --white: #fffdf9;
-  --ink: #293c40;
-  --olive: #9d432f;
-  --olive-dark: #793322;
-  --stone: #eae2d6;
-  --muted: #626862;
-  --clay: #9d432f;
-  --line: #d7d1c5;
-  --sans: 'Trebuchet MS', 'Segoe UI', Arial, sans-serif;
-  --serif: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
-  --max-width: 1320px;
+  --paper: #ffffff;
+  --white: #ffffff;
+  --ink: #263d3d;
+  --olive: #416b62;
+  --olive-dark: #2d514a;
+  --stone: #edf2ef;
+  --muted: #5c6b68;
+  --clay: #416b62;
+  --line: #dce4df;
+  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --serif: var(--sans);
+  --max-width: 1280px;
   --gutter: 48px;
 }

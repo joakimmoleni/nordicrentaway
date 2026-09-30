@@ -22,3 +22,9 @@ Nya webbtexter är redaktionell bearbetning, inte nya löften om avkastning, sva
 Officiell dokumentation om publicering:
 https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
 https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+
+## Designuppdatering 30 september 2026
+
+Originalets kustbild (`Bakgrund3.jpg`) används nu på startsidan. Johan och Isabels porträtt och roller som medgrundare/ägare har kontrollerats mot https://www.nordicrentaway.com/team. Tre nya medieposter med kontrollerade original och SHA-256 finns i `content/media.json`. Inga syntetiska bilder har använts.
+
+Designen har jämförts med den nuvarande hemsidan och granskats på 360, 390, 768 och 1440 px. Meny, Escape, galleriets fokusåterställning, kontaktlänkar och felsida har kontrollerats. Lokal bildkonvertering använde redan tillgänglig Pillow via en tillfällig adapter; projektets befintliga ImageMagick-bygge och beroenden är oförändrade. GitHub Actions kör den ordinarie bildberedningen inför publicering.

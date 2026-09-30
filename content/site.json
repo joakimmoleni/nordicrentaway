@@ -26,32 +26,32 @@
   "source": "https://www.nordicrentaway.com/contact",
   "navigation": [
     {
-      "label": "Holiday homes",
-      "path": "properties/index.html"
+      "label": "Home",
+      "path": "index.html"
     },
     {
-      "label": "For owners",
+      "label": "Our services",
       "path": "services/index.html"
     },
     {
-      "label": "About us",
+      "label": "Our team",
       "path": "about/index.html"
     },
     {
-      "label": "Contact",
-      "path": "contact/index.html"
+      "label": "Properties",
+      "path": "properties/index.html"
     }
   ],
   "ui": {
     "en": {
       "primaryCta": "Talk to Johan",
       "guestCta": "Book a stay",
-      "ownerLabel": "Homes & hospitality",
+      "ownerLabel": "Property & rental management",
       "skip": "Skip to content",
       "backProperties": "All properties",
       "propertyCta": "Check availability",
-      "footerHeading": "Make yourself\nat home.",
-      "footerText": "Planning a holiday or looking for a team to care for your property? We’d love to hear from you.",
+      "footerHeading": "Let’s talk about\nyour home in Spain.",
+      "footerText": "A place you visit, a home you rent out, or a little of both. Tell Johan what you have in mind.",
       "photoPending": "Photo awaiting approval",
       "placeholderLabel": "Development placeholder · not a property image"
     }
