@@ -112,3 +112,19 @@ test('a deterministic build stays within the own-code budget',async t=>{
  const dir=await fixture(t);const result=await build({root:dir});assert.equal(result.pages,13);assert.ok(result.cssGzipBytes<40000);assert.ok(result.jsGzipBytes<40000);
  const first=await readFile(path.join(dir,'dist/index.html'),'utf8');await build({root:dir});assert.equal(await readFile(path.join(dir,'dist/index.html'),'utf8'),first);
 });
+
+
+test('a style change gives every page a fresh stylesheet URL',async t=>{
+ const dir=await fixture(t);
+ await build({root:dir});
+ const stylesheet=html=>html.match(/<link rel="stylesheet" href="([^"]+)"/)?.[1];
+ const before=stylesheet(await readFile(path.join(dir,'dist/index.html'),'utf8'));
+ const css=path.join(dir,'src/styles/base.css');
+ await writeFile(css,(await readFile(css,'utf8'))+'\nbody { color: #234; }\n');
+ await build({root:dir});
+ const after=stylesheet(await readFile(path.join(dir,'dist/index.html'),'utf8'));
+ assert.notEqual(after,before);
+ assert.ok((await readFile(path.join(dir,'dist',after),'utf8')).includes('color: #234'));
+ const nested=stylesheet(await readFile(path.join(dir,'dist/services/rental-management/index.html'),'utf8'));
+ assert.equal(nested,'../../'+after);
+});

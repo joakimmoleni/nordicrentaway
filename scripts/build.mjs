@@ -2,6 +2,7 @@ import {cp, mkdir, readFile, writeFile, rm, rename, stat} from 'node:fs/promises
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {gzipSync} from 'node:zlib';
+import {createHash} from 'node:crypto';
 import {loadModel, validateModel} from './model.mjs';
 import {validateOutput} from './validate.mjs';
 import {renderPages} from '../src/templates/pages.mjs';
@@ -20,7 +21,8 @@ export async function build({root=path.resolve(fileURLToPath(new URL('..',import
    await mkdir(path.join(stage,'assets'),{recursive:true});
    await cp(path.join(root,'public'),stage,{recursive:true});
    const css=(await Promise.all(['tokens','base','layout','components'].map(name=>readFile(path.join(root,'src/styles',`${name}.css`),'utf8')))).join('\n');
-   await writeFile(path.join(stage,'assets/site.css'),css);
+   model.stylesheetPath=`assets/site-${createHash('sha256').update(css).digest('hex').slice(0,12)}.css`;
+   await writeFile(path.join(stage,model.stylesheetPath),css);
    await cp(path.join(root,'src/scripts'),path.join(stage,'assets/scripts'),{recursive:true});
    const pages=renderPages(model);
    for(const [route,html] of pages){await mkdir(path.dirname(path.join(stage,route)),{recursive:true});await writeFile(path.join(stage,route),html);}
