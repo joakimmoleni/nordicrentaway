@@ -12,6 +12,10 @@ Läs aktuell fil och `docs/content-model.md`. Ändra källor, aldrig genererad `
 
 Gissa inte priser, resultat, roller, omdömen, garantier eller objektuppgifter. Använd null/draft för saknade fakta. Generera aldrig påhittade fotografier av riktiga bostäder. Företagets publicerade material är godkänt, men bildtexter måste ändå beskriva rätt motiv: poolbilden visar SeaCoasts gemensamma område och Altea-bilden är inte SeaCoast. Använd inte bilden av staplade händer som ett dokumentärt teamporträtt.
 
+## Design
+
+Vid design och ändringar av gränssnitt: läs och följ `docs/Designprinciper-utan-AI-slop.md` (Joakims beslut 2026-09-27). Börja med besökarens uppgift och företagets befintliga identitet. Ägare ska förstå tjänsterna och hitta Johan; gäster ska hitta bostäder och bokning. Behåll originalets kustbild, logotyp och riktiga människor. Skriv konkreta rubriker. Lägg inte till generiska slogans, upprepade presentationsblock, kort, färgkanter eller animationer utan användarnytta. Bildöverlägg för läsbarhet och kort som grupperar en bostads uppgifter har ett tydligt syfte. Granska riktiga flöden och renderad layout, inte bara en skärmbild.
+
 ## Kontroll och publicering
 
 På ren checkout: `node scripts/prepare-media.mjs`. Därefter `node scripts/validate.mjs`, `node --test tests/core.test.mjs`, `node scripts/build.mjs`. Kontrollera berörda sidor vid 360, 390, 768 och 1440 px med riktiga bilder. Kontrollera meny, kontaktlänkar, galleri och felstatus. Behåll föregående fungerande bygge om något misslyckas.

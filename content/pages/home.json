@@ -3,51 +3,23 @@
     "seoTitle": "Property & rental management on Costa Blanca | Nordic RentAway Spain",
     "seoDescription": "A local team for your home on the Costa Blanca. Rental management, property care, interior design and investment advice, from Dénia to Orihuela.",
     "eyebrow": "Nordic RentAway Spain",
-    "heading": "Your home on the coast.",
-    "headingAccent": "Our care, all year.",
-    "intro": "Property care and rental management on the Costa Blanca. A local team, here for your home and everyone who stays in it.",
-    "cta": "Let’s talk about your property",
-    "secondaryCta": "Explore our services",
+    "heading": "Property & rental management",
+    "headingAccent": "on the Costa Blanca.",
+    "intro": "We look after your property and welcome your guests, from Dénia to Orihuela.",
+    "cta": "Talk to Johan",
+    "secondaryCta": "Our services",
     "heroPropertyId": "property-001",
     "heroMediaId": "media-coast",
-    "heroNote": "Dénia to Orihuela · Costa Blanca",
-    "servicesEyebrow": "Our services",
-    "servicesHeading": "A home in Spain.\nA team on your doorstep.",
-    "servicesIntro": "From looking after your keys to welcoming your next guests, we take care of the details. Choose the help that fits your home.",
-    "processEyebrow": "Getting started",
-    "processHeading": "It starts with a conversation.",
-    "processIntro": "Every home is different. We start by listening to what you need, then work through the practical details together.",
-    "processNote": "The scope and fees are agreed with you before work begins.",
-    "processSteps": [
-      {
-        "title": "Tell us about your home",
-        "text": "Start with the location and what you would like help with. An exact address is not needed for the first conversation."
-      },
-      {
-        "title": "Walk through the details",
-        "text": "Discuss the property, your own stays and the practical work involved."
-      },
-      {
-        "title": "Agree the scope",
-        "text": "Clarify responsibilities, costs and arrangements before preparing the home."
-      },
-      {
-        "title": "Prepare for what’s next",
-        "text": "Plan the agreed setup, presentation or care with the team."
-      }
-    ],
-    "propertiesEyebrow": "A few of the homes we care for",
-    "propertiesHeading": "Different homes. The same care.",
-    "propertiesIntro": "By the sea, above the rooftops or in the heart of Alicante. Get to know a few properties from our rental collection.",
+    "servicesHeading": "Services for property owners",
+    "servicesIntro": "Rental management, regular property care or help with a new home. Find the service you need below.",
+    "propertiesHeading": "Holiday homes on the Costa Blanca",
+    "propertiesIntro": "Explore three homes in our rental collection, or browse all properties for dates and availability.",
     "propertiesLink": "All holiday homes",
-    "teamEyebrow": "Meet your local team",
-    "teamHeading": "A familiar face.\nSomeone you can call.",
+    "teamHeading": "Meet Johan and Isabel",
     "teamIntro": "Johan, Isabel and our international team work with owners and guests across the Alicante province. Tell us about your home, your plans and what you need from a local partner.",
     "teamLink": "Get to know us",
-    "areaEyebrow": "A little local knowledge",
-    "areaHeading": "At home on the Costa Blanca.",
+    "areaHeading": "Where to eat, drink and explore",
     "areaIntro": "From Dénia to Orihuela, this is the coast we work on. Our team’s guide, We Recommend, brings together places to eat, drink and explore.",
-    "areaSecondary": "Our places. Our recommendations.",
     "areaLink": "Explore We Recommend",
     "servicesMediaId": "media-004"
   }

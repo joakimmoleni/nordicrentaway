@@ -46,12 +46,11 @@
     "en": {
       "primaryCta": "Talk to Johan",
       "guestCta": "Book a stay",
-      "ownerLabel": "Property & rental management",
       "skip": "Skip to content",
       "backProperties": "All properties",
       "propertyCta": "Check availability",
-      "footerHeading": "Let’s talk about\nyour home in Spain.",
-      "footerText": "A place you visit, a home you rent out, or a little of both. Tell Johan what you have in mind.",
+      "footerHeading": "Need help with your property?",
+      "footerText": "Contact Johan about rental management, property care, interiors or buying a home on the Costa Blanca.",
       "photoPending": "Photo awaiting approval",
       "placeholderLabel": "Development placeholder · not a property image"
     }

@@ -2,7 +2,7 @@
 
 `content/site.json`: namn, gemensamma UI-texter, navigation, gästkontakt, bokningslänk, preview-URL och produktionsgodkännanden. `ownerContactId` hänvisar till en person i `content/team.json`; telefon och e-post ska inte dupliceras i mallar.
 
-`content/pages/home.json`: startsidans rubrik, intro, process och avsnitt. `heroMediaId` väljer huvudbild och `servicesMediaId` bilden vid tjänsterna. Bildtexten kommer från medieposten. `content/team.json` använder `mediaId` för respektive persons godkända porträtt. `content/pages/about.json`: presentation och `photoMediaId`. `contact.json`: kontaktintro och förberedd men inaktiv formulärmodell. `services.json` och `properties.json`: respektive översikt och återkommande texter.
+`content/pages/home.json`: startsidans rubrik, intro och avsnitt. `heroMediaId` väljer huvudbild och `servicesMediaId` bilden vid tjänsterna. Bildtexten kommer från medieposten. `content/team.json` använder `mediaId` för respektive persons godkända porträtt. `content/pages/about.json`: presentation och `photoMediaId`. `contact.json`: kontaktintro och förberedd men inaktiv formulärmodell. `services.json` och `properties.json`: respektive översikt och återkommande texter.
 
 `content/services/*.json`: fyra verifierade tjänster. `content/properties/*.json`: redaktionellt urval om tre faktiska boenden. Varje objekt har stabilt id, unik slug, status draft/published, ort, lokaliserad bostadstyp, namn/beskrivning/SEO, mediereferenser och källänk. Sovrum, badrum och gästantal kan vara null när de inte är kända. Projektbidrag (`scope`) får bara anges med egen källa (`scopeSource`). Inga nattpriser eller ledighetsmarkeringar.
 
