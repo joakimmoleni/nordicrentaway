@@ -1,17 +1,57 @@
 {
-  "id": "service-001", "slug": "rental-management", "order": 1, "status": "published",
-  "source": "https://www.nordicrentaway.com/services/rental-management", "verifiedAt": "2026-09-07",
+  "id": "service-001",
+  "slug": "rental-management",
+  "order": 1,
+  "status": "published",
+  "source": "https://www.nordicrentaway.com/services/rental-management",
+  "verifiedAt": "2026-09-30",
   "en": {
     "title": "Rental management",
-    "summary": "From preparing the home to welcoming guests.",
-    "description": "Preparation, photography, listing presentation and the day-to-day work around your holiday rental.",
+    "summary": "Listings, personal check-in, guest support and monthly rental statements.",
+    "description": "From preparing your home to welcoming each guest, we manage the practical work of renting out your property on the Costa Blanca.",
     "rows": [
-      {"title": "Getting ready", "text": "Guidance on preparation and documentation, followed by the photography and presentation of the home."},
-      {"title": "Listings and stays", "text": "Rental listings, reservation administration and communication with guests around their stay."},
-      {"title": "Your own time here", "text": "Your personal stays are coordinated with the rental calendar. The company’s existing owner portal provides calendar access."},
-      {"title": "The practical work", "text": "Cleaning arrangements, rental statements and coordination with property care. Confirm the service scope and current fees with Johan."}
+      {
+        "title": "Preparing your home",
+        "text": "We guide you through the documentation and tourism rental licence process, then help with the checklist, orders and purchases needed to prepare your home for guests."
+      },
+      {
+        "title": "Photography and listings",
+        "text": "We photograph your property and its surroundings, prepare the descriptions and publish on selected rental platforms. We manage their booking and payment processes."
+      },
+      {
+        "title": "A rental plan for your property",
+        "text": "We agree a strategy around your plans, the location, facilities and seasonal demand. Pricing and occupancy are considered together, alongside the care of your home."
+      },
+      {
+        "title": "Welcoming and supporting guests",
+        "text": "Our Guest Experience Team is personally present at every check-in and provides 24/7 support. We handle guest registration, security deposits and communication, and provide digital guides to the home and local area."
+      },
+      {
+        "title": "Cleaning and property care",
+        "text": "La Lavandería Alicante handles cleaning and linen after guest and owner departures. The cleaning team checks for wear and tear, while we coordinate maintenance and repairs through our property management service."
+      }
     ],
     "seoTitle": "Rental management on Costa Blanca | Nordic RentAway",
-    "seoDescription": "Preparation, photography, listing presentation and the day-to-day work around your holiday rental. Talk to Nordic RentAway Spain about your property."
+    "seoDescription": "Preparation, photography, listing presentation and the day-to-day work around your holiday rental. Talk to Nordic RentAway Spain about your property.",
+    "questionsHeading": "Before you rent out your home",
+    "questionsIntro": "Your calendar, the service and the costs — a few useful details before our first conversation.",
+    "questions": [
+      {
+        "question": "What does rental management cost?",
+        "answer": "Our management fee is 25% + VAT, deducted from the monthly payout. You receive an invoice and a rental statement. Individual maintenance costs are handled separately."
+      },
+      {
+        "question": "When do I receive my rental income?",
+        "answer": "We transfer rental income each month following the guest’s departure, with the management fee deducted. Your statement sets out the rental income and charges."
+      },
+      {
+        "question": "Can I still use my own home?",
+        "answer": "Yes. We coordinate your personal stays and block those dates on the rental platforms. The Owner’s Portal gives you access to a live calendar of reservations."
+      },
+      {
+        "question": "How is cleaning paid for?",
+        "answer": "Guests pay a separate cleaning fee when booking. We handle that payment directly with the cleaning company, so it does not appear in your monthly rental statement."
+      }
+    ]
   }
 }

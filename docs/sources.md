@@ -28,3 +28,7 @@ https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-githu
 Originalets kustbild (`Bakgrund3.jpg`) används nu på startsidan. Johan och Isabels porträtt och roller som medgrundare/ägare har kontrollerats mot https://www.nordicrentaway.com/team. Tre nya medieposter med kontrollerade original och SHA-256 finns i `content/media.json`. Inga syntetiska bilder har använts.
 
 Designen har jämförts med den nuvarande hemsidan och granskats på 360, 390, 768 och 1440 px. Meny, Escape, galleriets fokusåterställning, kontaktlänkar och felsida har kontrollerats. Lokal bildkonvertering använde redan tillgänglig Pillow via en tillfällig adapter; projektets befintliga ImageMagick-bygge och beroenden är oförändrade. GitHub Actions kör den ordinarie bildberedningen inför publicering.
+
+## Innehåll för Johan-visningen, 30 september 2026
+
+Uthyrning och fastighetsförvaltning kontrollerades på nytt mot företagets egna tjänstesidor ovan. Uthyrning: 25 % + VAT, månadsutbetalning efter avresa med faktura och avräkning, separat gästbetald städavgift, egna vistelser i kalendern, personlig incheckning och 24/7 gästsupport. Representation: startavgift €20 + VAT för avtalat besök, därefter tim- eller fast pris för arbetet. Uppgifterna återges från företagets publicerade tjänstebeskrivningar; inga nya pris- eller servicelöften har skapats. Frågor och svar har en gemensam innehållskälla för startsida och uthyrningssida.
